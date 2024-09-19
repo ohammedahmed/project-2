@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:url(images/stacked-peaks-haikei.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+
+.menu{
+    width:100%;
+    /* overflow:hidden; */
+    height:100px;
+    background-color:#000000e7;
+    backdrop-filter:blur(13px);
+    /* background-color:red; */
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.logo{
+    margin-left:25px;
+}
+
+.links{
+    margin-right:25px;
+    display:flex;
+    align-items:center;
+}
+
+.menu-link{
+    color:#fff;
+    text-decoration:none;
+    padding: 10px 15px;
+    margin:0 10px;
+    border-radius:15px;
+    flex-wrap:nowrap;
+    transition:.3s;
+}
+
+.menu-link:hover{
+    background-color:#0C8ED4;
+}
+
+.Home{
+    background-color:#0C8ED4;
+}
+
+.logo-image{
+    height:103px;
+}
+
+.all{
+    width:100%;
+    height:calc(100vh - 100px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+h1 , p{
+    color:white;
+    text-align:center;
+    margin-top:20px;
+}
+
+.box-1{
+    width:90%;
+    height:90%;
+    backdrop-filter:blur(3px);
+    background-color:rgba(250, 245, 245, 0.404);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.sign-up{
+    /* background-color:red; */
+    display:flex;
+    flex-direction:column;
+    border:solid 1px white;
+    height:80%;
+    width:90%;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    align-items:center;
+    justify-self:center;
+}
+
+.email-form{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+    margin-bottom:20px;
+    flex-direction:column;
+}
+.email-form{
+    margin-top:30px;
+}
+label{
+    color:white;
+    margin-right:15px;
+    display:inline-block;
+}
+.password-label{
+    margin-top:30px;
+}
+
+button{
+    background:transparent;
+    border:none;
+    border:solid 3px black;
+    width:300px;
+    height:50px;
+    border-radius:30px;
+    margin-bottom:20px;
+    cursor:pointer;
+    transition:.5s;
+    color:white;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.submit:hover{
+    background-color:#00aeff;
+    box-shadow:0 0 30px #00aeff;
+}
+
+.email-input:valid{
+    border:solid 3px rgb(9, 219, 156);
+}
+.email-input:invalid{
+    border:solid 3px rgb(250, 86, 21);
+}
+.login:hover{
+    background-color:rgb(5, 209, 141);
+    box-shadow:0 0 30px rgb(5, 209, 141);
+}
+
+input{
+    width:300px;
+    height:50px;
+    border-radius:30px;
+    border:none;
+    padding: 0 10px;
+}
+
+@media(max-width:690px){
+    body{
+        height:auto;
+    }
+    .menu{
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:190px;
+    }
+    .all{
+        height:100vh;
+    }
+
+    .logo{
+        margin:0;
+    }
+
+    .links{
+        margin:0;
+    }
+
+    .menu-link{
+        margin:0 7px
+    }
+
+    a{
+        font-size:13px;
+        margin:0 0;
+    }
+}
